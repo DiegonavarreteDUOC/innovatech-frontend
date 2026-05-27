@@ -18,6 +18,9 @@ FROM nginx:stable-alpine
 RUN touch /var/run/nginx.pid && \
     chown -R nginx:nginx /var/run/nginx.pid /var/cache/nginx /var/log/nginx /etc/nginx/conf.d
 
+# Copiar plantilla de configuración para variables de entorno (Nginx proxy)
+COPY default.conf.template /etc/nginx/templates/default.conf.template
+
 USER nginx
 
 # Copiar los archivos construidos desde la etapa anterior
