@@ -72,7 +72,7 @@ function Footer() {
           <span className="text-sm text-gray-800 dark:text-gray-800 sm:text-center">
             © 2024{" "}
             <a href="#" className="hover:underline">
-              HOLAHOLAHOLAHOLAHOLA™
+              HOLAHOLAHOLAHOLA™
             </a>
             . Todos los derechos reservados.
           </span>
